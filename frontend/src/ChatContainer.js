@@ -20,9 +20,9 @@ const ChatContainer = () => {
       try {
         let response;
         if (selectedModel === 'Gemini AI') {
-          response = await axios.post('http://localhost:5000/api/gemini', { prompt: input });
+          response = await axios.post('http://localhost:8000/api/gemini', { prompt: input });
         } else if (selectedModel === 'Mistral') {
-          response = await axios.post('http://localhost:5000/api/mistral', { prompt: input });
+          response = await axios.post('http://localhost:8000/api/mistral', { prompt: input });
         } else {
           // Handle other models here if needed
           return;

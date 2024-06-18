@@ -14,8 +14,8 @@ app.use(cors({
 
 const PORT = process.env.PORT || 3000;
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_KEY);
-const mistralClient = new MistralClient(process.env.MISTRAL_AI_KEY);
+const genAI = new GoogleGenerativeAI("AIzaSyD8DR0l7c-vaqEaHJXP77jfe9TEymqICxc");
+const mistralClient = new MistralClient("eBXsDS36GkqejY5cbMbmMP7euQz4Mcc1");
 
 const generateGeminiResponse = async (prompt) => {
   const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
